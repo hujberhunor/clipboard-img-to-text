@@ -11,11 +11,11 @@ clipboard-img-to-text is a simple Python script that converts an image from your
 ## I3 integration example
 Run the script every time when `win/super` and `prtScr` is pressed:
 ```bash
-bindsym $mod2:Print exec flameshot-gui && python3 path/to/image-to-text.py
+bindsym $mod2+Print exec flameshot-gui && python3 path/to/image-to-text.py
 ```
 
 Bind the script to another key:
-```
+```bash
 bindsym $mod2+o exec python3 path/to/image-to-text.py
 ```
 
