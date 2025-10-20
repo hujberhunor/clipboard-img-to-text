@@ -8,8 +8,11 @@ clipboard-img-to-text is a simple Python script that converts an image from your
 3. The recognized text will be automatically copied to your clipboard.
 4. Desktop notifications indicate whether the OCR was successful or if an error occurred.
 
-My usage with i3: 
-`bindsym $mod2:Print exec flameshot-gui && python3 path/to/image-to-text.py
+## I3 integration example
+Run the script every time when `win/super` and `prtScr` is pressed:
+`bindsym $mod2:Print exec flameshot-gui && python3 path/to/image-to-text.py`
+Bind the script to another key:
+`bindsym $mod2+o exec python3 path/to/image-to-text.py
 
 ## Requirements
 - Python
@@ -17,3 +20,8 @@ My usage with i3:
   - pytesseract
 - xclip
 - notifyd
+
+## Features that needed
+- Better OCR
+- markdown support (convert the text to md)
+  
